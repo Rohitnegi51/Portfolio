@@ -73,7 +73,7 @@ const Contact = () => {
           CONTACT
         </h1>
         <p ref={insRef} className="text-neutral-500 text-sm md:text-base mt-4 font-b tracking-tight">
-          Let’s build something meaningful together.
+          Let’s make pixels speak.
         </p>
       </div>
 
