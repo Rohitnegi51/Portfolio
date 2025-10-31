@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-h {
+    @apply font-heading font-bold;
+  }
+  
+  .font-b {
+    @apply font-body font-medium;
+  }
+  
+  /* Optional additional weights */
+  .font-h-light {
+    @apply font-heading font-light;
+  }
+  
+  .font-b-semibold {
+    @apply font-body font-semibold;
+  }
+
+
+  ::selection {
+    background: black; /* your highlight color */
+    color: #fff;         /* text color while selected */
+  }
+  
+  @layer components {
+    .chngHvrEff {
+      @apply flex items-center gap-1 cursor-pointer;
+    }
+
+    .chngHvrEff:hover .underline-hover,
+    .chngHvrEff:hover .rotate-hover {
+      @apply text-neutral-700;
+    }
+  
+    /* Underline effect (triggered when parent is hovered) */
+    .chngHvrEff .underline-hover {
+      @apply relative inline-block;
+    }
+  
+    .chngHvrEff .underline-hover::after {
+      content: "";
+      @apply absolute left-0 bg-slate-900;
+      height: 4%;
+      width: 0%;
+      bottom: 4%;
+      transition: width 0.4s ease, left 0.4s ease ;
+    }
+  
+    .chngHvrEff:hover .underline-hover::after {
+      width: 100%;
+      left: 0;
+    }
+  
+    /* Icon rotation (triggered when parent is hovered) */
+    .chngHvrEff .rotate-hover {
+      @apply inline-block transition-transform duration-300 ease-in-out;
+    }
+  
+    .chngHvrEff:hover .rotate-hover {
+      transform: rotate(45deg);
+    }
+  }
+
+  @layer components { 
+    .line-below { 
+      @apply relative inline-block cursor-pointer; 
+    } 
+    .line-below::after {
+       content: ""; 
+       @apply absolute left-0 bg-slate-900;
+        height: 2%; 
+        width: 0%; 
+        bottom: 14%; /* moves the underline 10% below text */ 
+        transition: width 0.4s ease, left 0.4s ease; 
+      } 
+      .line-below:hover::after {
+         width: 100%; left: 0; 
+      } 
+      .line-below:not(:hover)::after { width: 0%; left: 0; /* Keep left=0 to retract smoothly toward the left */ 
+      } 
+  }
+
+
+  @layer components {
+    .floating-group {
+      @apply relative w-full;
+    }
+  
+    .floating-input {
+      @apply w-full border-b border-black bg-transparent py-2 text-base font-b focus:outline-none;
+    }
+  
+    .floating-label {
+      @apply absolute left-0 text-neutral-500 text-sm pointer-events-none transition-all duration-300 ease-in-out;
+      top: 0.6rem;
+    }
+  
+    .floating-input:focus + .floating-label,
+    .floating-input:not(:placeholder-shown) + .floating-label {
+      @apply text-xs text-black;
+      top: -0.8rem;
+    }
+  }
+  
+  .no-word-break {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal; /* or word-wrap: normal; */
+    hyphens: none;
+  }
+  
+  
+  
+
+
+
+
