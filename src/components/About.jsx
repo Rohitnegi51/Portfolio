@@ -44,7 +44,7 @@ const AboutMe = () => {
               <p className="fade-text text-left tracking-tight text-4xl leading-none space-y-5 whitespace-normal break-normal text-wrap-normal hyphens-none ">
                 <span className="space-y-3">
                   Hello there, I’m Rohit — a passionate developer currently
-                  pursuing my B.Tech in Information Technology from Delhi
+                  pursuing my B.Tech from Delhi
                   Technological University. I enjoy building complete web
                   solutions that merge creative front-end design with strong
                   backend architecture and efficient database management.
