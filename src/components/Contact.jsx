@@ -160,7 +160,7 @@ const Contact = () => {
             </div>
 
             <div className="chngHvrEff flex ">
-              <a href="www.linkedin.com/in/rohit-negi-79679825a" className="underline-hover">
+              <a href="https://www.linkedin.com/in/rohit-negi-79679825a/" className="underline-hover">
                 LINKEDIN
               </a>
               <div>
