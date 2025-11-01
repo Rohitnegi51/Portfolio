@@ -142,7 +142,7 @@ const Navbar = () => {
           {/* Top social links */}
           <div className="flex space-x-6 text-sm font-b">
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/rohit-negi-79679825a/"
               target="_blank"
               rel="noopener noreferrer"
               className="bracket-link "
@@ -153,7 +153,7 @@ const Navbar = () => {
             </a>
             <div className="">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Rohitnegi51/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bracket-link "
@@ -168,10 +168,10 @@ const Navbar = () => {
           {/* Email */}
           <div className="text-center">
             <a
-              href="mailto:rohitnegi1108@gmail.com"
+              href="mailto:rohitnegi0690@gmail.com"
               className="text-sm text-gray-800 font-h line-below"
             >
-              rohitnegi1108@gmail.com
+              rohitnegi0690@gmail.com
             </a>
           </div>
 
