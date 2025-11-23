@@ -15,10 +15,10 @@ const ProjectsDefault = () => {
       github: "https://github.com/Rohitnegi51/Streamify",
     },
     {
-      title: "TaskSync",
-      desc: "A smart and minimal task management platform tailored for students to organize, prioritize, and track their academic goals efficiently. Designed with an intuitive UI and a focus on productivity, collaboration, and progress tracking — built to evolve with real-world needs.",
+      title: "BookReview",
+      desc: "A clean and intuitive mobile app for book lovers to manage their reading lists, write and track reviews, and rate books seamlessly. Built with a focus on usability, real-time updates, and secure authentication — designed to help readers stay organized, discover new books, and share their thoughts effortlessly.",
       year: "2025",
-      github: "https://github.com/Rohitnegi51/TaskSync",
+      github: "https://github.com/Rohitnegi51/Book_Review",
     },
     {
       title: "Portfolio",
