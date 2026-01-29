@@ -30,11 +30,13 @@ const Navbar = () => {
     <nav className="bg-[rgba(255,255,255,0.3)] fixed top-0 left-0 right-0 z-[100]  ">
       <div className="px-8 sm:px-4 md:px-8 pt-2 ">
         <div className=" mx-auto flex justify-between items-center ">
-          <h1 className="text-4xl text-neutral-950 font-h font-bold tracking-tight leading-none z-[60] xl:ml-20 xl:text-5xl">
-            ROHIT
-            <br />
-            <span className="-mt-3 block">NEGI</span>
-          </h1>
+          <a href="/" className="z-[60] xl:ml-20 block">
+            <h1 className="text-4xl text-neutral-950 font-h font-bold tracking-tight leading-none xl:text-5xl">
+              ROHIT
+              <br />
+              <span className="-mt-3 block">NEGI</span>
+            </h1>
+          </a>
 
           {/* Large screen links */}
           <div className="hidden sm:flex text-lg space-x-6 gap-2 md:gap-12 lg:gap-16 xl:gap-24 font-b">

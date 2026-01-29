@@ -8,11 +8,14 @@ import Contact from './components/Contact'
 import AboutMe from './components/About'
 import Skills from './components/Skills'
 import ProjectsDefault from './components/Projects'
-import { useEffect } from "react";
+import Loader from './components/Loader'
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
+    if (isLoading) return; // Don't init Lenis until loaded
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -40,6 +43,7 @@ const App = () => {
   
   return (
     <main className=''>
+      {isLoading && <Loader onComplete={() => setIsLoading(false)} />}
       <Navbar/>
       <Hero/>
       <AboutMe/>
